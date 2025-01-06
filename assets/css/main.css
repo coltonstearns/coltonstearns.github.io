@@ -159,6 +159,8 @@ input, select, textarea {
 	h3 {
 		font-size: 1.25em;
 		line-height: 1.5em;
+		margin-bottom: 0.0em; /* Adjust this value as needed */
+
 	}
 
 	h4 {
@@ -1794,6 +1796,10 @@ input, select, textarea {
 		font-size: 2em;
 	}
 
+	.centered-heading {
+		  text-align: center;
+	}
+
 /* Form */
 
 	form {
@@ -2133,6 +2139,19 @@ input, select, textarea {
 				width: 100%;
 			}
 
+        .image.project-image {
+            display: block;
+			margin: 0 0 2em 0;
+			margin-left: auto;
+  			margin-right: auto;
+			width: 50%;
+		}
+
+			.image.project-image img {
+				width: 100%;
+			}
+
+
 		.image.avatar {
 			border-radius: 100%;
 		}
@@ -2246,10 +2265,14 @@ input, select, textarea {
 		display: -webkit-flex;
 		display: -ms-flex;
 		display: flex;
+		justify-content: center; /* Centers items horizontally within the flex container */
 		cursor: default;
 		list-style: none;
 		margin-left: -1em;
 		padding-left: 0;
+		margin-bottom: 2.5em;
+		margin-top: -2em;
+
 	}
 
 		ul.actions li {
@@ -3078,7 +3101,7 @@ input, select, textarea {
 			#footer {
 				background-attachment: scroll;
 				background-color: #1f1815;
-				background-image: url("images/overlay.png"), url("../../images/bg.jpg");
+				background-image: url("images/overlay.png"), url("../../images/bg-old.jpg");
 				background-position: top left,						bottom center;
 				background-repeat: repeat,							no-repeat;
 				background-size: auto,							cover;
